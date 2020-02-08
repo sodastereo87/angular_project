@@ -1,5 +1,5 @@
 {
-  "users": [
+  "publications": [
     {
       "id": 1,
       "title": "Microsoft",
@@ -28,7 +28,7 @@
       "description": "description"
     }
   ],
-  "companies": [
+  "authors": [
     {
       "id": 1,
       "author": "Bill Gates"
