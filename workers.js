@@ -22,7 +22,7 @@ let generateWorkers = () => {
     });
   }
 
-  return { workers: workers };
+  return { publications: workers };
 };
 
 module.exports = generateWorkers;
