@@ -1,20 +1,15 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
+import { Todo } from "../models/Todos";
 
-import { Todo } from "../models/Todo";
-
-@Injectable({
-  providedIn: "root"
-})
+@Injectable()
 export class InfoService {
-  todosUrl: string = "https://jsonplaceholder.typicode.com/todos";
-  todosLimit = "?_limit=5";
+  private _url: string = "../../../db.json";
 
   constructor(private http: HttpClient) {}
 
-  // Get Todos
-  getTodos(): Observable<Todo[]> {
-    return this.http.get<Todo[]>(`${this.todosUrl}${this.todosLimit}`);
+  getEmplyees(): Observable<Todo[]> {
+    return this.http.get<Todo[]>(this._url);
   }
 }
