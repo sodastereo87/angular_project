@@ -8,13 +8,19 @@ import { HeaderComponent } from "./components/header/header.component";
 import { EmployeeListComponent } from "./employee-list/employee-list.component";
 import { EmployeeDetailComponent } from "./employee-detail/employee-detail.component";
 import { EmployeeService } from "./employee.service";
+import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     EmployeeListComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    AboutComponent,
+    HomeComponent,
+    
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [EmployeeService],

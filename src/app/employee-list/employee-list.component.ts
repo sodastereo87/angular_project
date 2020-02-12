@@ -7,7 +7,9 @@ import { EmployeeService } from "./../employee.service";
     <h2>Author List</h2>
     <h3>{{ errorMsg }}</h3>
     <ul *ngFor="let employee of employees">
-      <li>{{ employee.firstName }} {{ employee.lastName }}</li>
+      <a routerLink="/about.component.html"
+        >{{ employee.firstName }} {{ employee.lastName }}</a
+      >
     </ul>
   `,
   styles: []
