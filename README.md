@@ -27,7 +27,7 @@ http://localhost:4200
 
 
 *NOTE.
-I was not able to finish it and do all you require. This is the first time I work with Angular and TypeScript. I went from 0 to this. I did my best, however it was not enough time to learn and apply a new language in 5 days. I am happy I got to learn a lot and will continue practicing with Angular. 
+I was not able to finish it and do all you require. This is the first time I work with Angular and TypeScript. I went from 0 to this. I did my best, however it was not enough time to learn and apply a new language in 5 days. I am happy. I got to learn a lot and will continue practicing with Angular. 
 Please let me know if you have further questions. 
 Thanks.
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Todo} from '../../models/Todos'
+import { Todo } from '../../models/Todos'
+import { TodoService } from '../../services/todo.service';
 
 @Component ({
   selector: 'app-home',
@@ -10,34 +11,38 @@ import {Todo} from '../../models/Todos'
 export class HomeComponent implements OnInit {
   todos:Todo[];
 
-  constructor() { }
+  constructor(private todoService:TodoService) { }
 
   ngOnInit() { 
-    this.todos= [
-      {
-        id:1,
-        title:'Microsoft /',
-        firstName: 'Bill',
-        lastName: 'Gates /',
-        email: 'bill@microsoft.com',
-      },
-      {
-        id:2,
-        title:'Facebook /',
-        firstName: 'Mark',
-        lastName: 'Zuckerberg /',
-        email: 'mark@facebook.com',
-      },
-       {
-        id:3,
-        title:'Amazon /',
-        firstName: 'Jeff',
-        lastName: 'Bezos /',
-        email: 'jeff@amazon.com',
-      }
+    this.todoService.getTodos().subscribe(todos => {
+      this.todos = todos;
+    });
+  //   this.todos= [
+  //     {
+  //       id:1,
+  //       title:'Microsoft /',
+  //       firstName: 'Bill',
+  //       lastName: 'Gates /',
+  //       email: 'bill@microsoft.com',
+  //     },
+  //     {
+  //       id:2,
+  //       title:'Facebook /',
+  //       firstName: 'Mark',
+  //       lastName: 'Zuckerberg /',
+  //       email: 'mark@facebook.com',
+  //     },
+  //      {
+  //       id:3,
+  //       title:'Amazon /',
+  //       firstName: 'Jeff',
+  //       lastName: 'Bezos /',
+  //       email: 'jeff@amazon.com',
+  //     }
 
-    ]
+  //   ]
 
-  }
+  // }
 
+}
 }
