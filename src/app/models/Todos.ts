@@ -4,6 +4,6 @@ export interface Todo {
   lastName: string;
   title: string;
   email: string;
-  recent: number;
-  paragraph: string;
+  // recent: number;
+  // paragraph: string;
 }
