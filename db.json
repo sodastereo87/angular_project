@@ -1,0 +1,46 @@
+{
+    "users":[
+  {
+    "id": 1,
+    "title": "Microsoft",
+    "date": "02/02/2020",
+    "firstName": "Bill",
+    "lastName": "Gates",
+    "email": "bill@microsoft.com",
+    "description": "description"
+  },
+  {
+    "id": 2,
+    "title": "facebook",
+    "date": "02/02/2020",
+    "firstName": "Mark",
+    "lastName": "Zuckerberg",
+    "email": "mark@facebook.com",
+    "description": "description"
+  },
+  {
+    "id": 3,
+    "title": "amazon",
+    "date": "02/02/2020",
+    "firstName": "Jeff",
+    "lastName": "Bezos",
+    "email": "jeff@amazon.com",
+    "description": "description"
+  }
+]
+,
+    "companies": [{
+            "id": 1,
+            "name": "Microsoft"
+        },
+        {
+            "id": 2,
+            "name": "Facebook"
+        },
+        {
+            "id": 3,
+            "name": "Amazon"
+        }
+    ]
+
+}
