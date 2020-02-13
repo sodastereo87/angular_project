@@ -27,8 +27,7 @@
     "email": "jeff@amazon.com",
     "description": "description"
   }
-]
-,
+],
     "companies": [{
             "id": 1,
             "name": "Microsoft"
