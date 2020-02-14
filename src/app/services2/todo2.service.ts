@@ -7,9 +7,9 @@ import { Todo } from "../models/Todos";
   providedIn: "root"
 })
 
-// get and export fake data from jsonplaceholder for authors page
-export class TodoService {
-  todosUrl: string = "http://jsonplaceholder.typicode.com/users";
+// get and export fake data from jsonplaceholder for posts page
+export class TodoService2 {
+  todosUrl: string = "http://jsonplaceholder.typicode.com/comments";
   todosLimit = "?_limit=10";
 
   constructor(private http: HttpClient) {}

@@ -1,9 +1,9 @@
 export interface Todo {
   id: number;
-  firstName: string;
-  lastName: string;
-  title: string;
+  name: string;
+  website: string;
   email: string;
-  // recent: number;
-  // paragraph: string;
+  phone: number;
+  title: string;
+  body: number;
 }
