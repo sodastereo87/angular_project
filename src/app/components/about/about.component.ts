@@ -17,4 +17,11 @@ export class AboutComponent implements OnInit {
       this.todos = todos;
     });
   }
+
+  // sort data by id...date not provided by fake REST API server
+  get sortData() {
+    return this.todos.sort((a, b) => {
+      return <any>new Date(b.id) - <any>new Date(a.id);
+    });
+  }
 }

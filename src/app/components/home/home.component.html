@@ -2,13 +2,16 @@
 
 <!-- import and loop thru the list of items from home.component-->
 <ul *ngFor="let todo of todos">
-  <li>
-    <a routerLink="/about">
-      <h4>User: {{ todo.id }}</h4>
-    </a>
-    <h4>Name: {{ todo.name }}</h4>
-    <h5>Email: {{ todo.email }}</h5>
-    <h5>Website: {{ todo.website }}</h5>
-    <h5>Phone: {{ todo.phone }}</h5>
-  </li>
+  <!-- sort date in descending order -->
+  <div *ngFor="let todo of sortData">
+    <li>
+      <a routerLink="/about">
+        <h4>User: {{ todo.id }}</h4>
+      </a>
+      <h5>Name: {{ todo.name }}</h5>
+      <h5>Email: {{ todo.email }}</h5>
+      <h5>Website: {{ todo.website }}</h5>
+      <h5>Phone: {{ todo.phone }}</h5>
+    </li>
+  </div>
 </ul>
